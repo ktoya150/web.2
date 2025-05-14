@@ -3,74 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <title>Меню Valve</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f5f5f5; }
-        table, th, td { border: 1px solid black; border-collapse: collapse; padding: 10px; }
-        table { width: 100%; margin-top: 20px; background-color: #fff; }
-        h2 { color: #2c3e50; }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #333;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            background-color: #444;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+        h2 {
+            color: #2c3e50;
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Меню Valve</h1>
+    </div>
 
-    <h1>Меню Valve</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="Засновники.html">Засновники</a></li>
+            <li><a href="історія валве.html">Історія</a></li>
+        </ul>
+    </nav>
 
-    <h2>Ігри Valve</h2>
-    <ul>
-        <li>Half-Life</li>
-        <li>Counter-Strike</li>
-        <li>Portal</li>
-        <li>Team Fortress</li>
-    </ul>
+    <div class="content">
+        <h2>Ігри Valve</h2>
+        <ul>
+            <li>Half-Life</li>
+            <li>Counter-Strike</li>
+            <li>Portal</li>
+            <li>Team Fortress</li>
+        </ul>
 
-    <h2>Важливі дати</h2>
-    <ol>
-        <li>1996 — Заснування компанії</li>
-        <li>1998 — Випуск Half-Life</li>
-        <li>2003 — Запуск Steam</li>
-        <li>2015 — Source 2</li>
-    </ol>
+        <h2>Важливі дати</h2>
+        <ol>
+            <li>1996 — Заснування компанії</li>
+            <li>1998 — Випуск Half-Life</li>
+            <li>2003 — Запуск Steam</li>
+            <li>2015 — Source 2</li>
+        </ol>
 
-    <h2>Ігри та платформи</h2>
-    <ul>
-        <li>Half-Life
-            <ol>
-                <li>PC</li>
-                <li>PlayStation 2</li>
-            </ol>
-        </li>
-        <li>Portal
-            <ol>
-                <li>PC</li>
-                <li>Xbox</li>
-            </ol>
-        </li>
-    </ul>
+        <h2>Ігри та платформи</h2>
+        <ul>
+            <li>Half-Life
+                <ol>
+                    <li>PC</li>
+                    <li>PlayStation 2</li>
+                </ol>
+            </li>
+            <li>Portal
+                <ol>
+                    <li>PC</li>
+                    <li>Xbox</li>
+                </ol>
+            </li>
+        </ul>
 
-    <h2>Таблиця ігор</h2>
-    <table>
-        <tr>
-            <th rowspan="2">Гра</th>
-            <th colspan="2">Дата випуску</th>
-        </tr>
-        <tr>
-            <td>Рік</td>
-            <td>Платформа</td>
-        </tr>
-        <tr>
-            <td>Half-Life</td>
-            <td>1998</td>
-            <td>PC</td>
-        </tr>
-        <tr>
-            <td>Portal</td>
-            <td>2007</td>
-            <td>PC, Xbox</td>
-        </tr>
-    </table>
+        <h2>Таблиця ігор</h2>
+        <table>
+            <tr>
+                <th rowspan="2">Гра</th>
+                <th colspan="2">Дата випуску</th>
+            </tr>
+            <tr>
+                <td>Рік</td>
+                <td>Платформа</td>
+            </tr>
+            <tr>
+                <td>Half-Life</td>
+                <td>1998</td>
+                <td>PC</td>
+            </tr>
+            <tr>
+                <td>Portal</td>
+                <td>2007</td>
+                <td>PC, Xbox</td>
+            </tr>
+        </table>
 
-    <map name="valvemap">
-        <area shape="rect" coords="10,10,150,150" href="https://store.steampowered.com/app/70/HalfLife/" alt="Half-Life">
-        <area shape="rect" coords="160,10,300,150" href="https://store.steampowered.com/app/400/Portal/" alt="Portal">
-    </map>
+        <map name="valvemap">
+            <area shape="rect" coords="10,10,150,150" href="https://store.steampowered.com/app/70/HalfLife/" alt="Half-Life">
+            <area shape="rect" coords="160,10,300,150" href="https://store.steampowered.com/app/400/Portal/" alt="Portal">
+        </map>
+    </div>
 </body>
 </html>
+
